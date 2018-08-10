@@ -1,0 +1,17 @@
+{
+  "name": "uplink",
+  "version": "1.0.0",
+  "description": "Drive robots through the command line.",
+  "repository": "https://github.com/AndersonRobotics/Uplink.git",
+  "author": "Shmish <shmish90@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "pkg": "^4.3.4",
+    "typescript": "^3.0.1"
+  },
+  "scripts": {
+    "test": "tsc src/index.ts --outFile app.js & node app.js & rm app.js",
+    "build": "tsc src/index.ts --outFile app.js & pkg app.js & rm app.js"
+  }
+}
