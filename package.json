@@ -7,11 +7,12 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@types/node": "^10.5.2",
     "pkg": "^4.3.4",
     "typescript": "^3.0.1"
   },
   "scripts": {
-    "test": "tsc src/index.ts --outFile app.js & node app.js & rm app.js",
-    "build": "tsc src/index.ts --outFile app.js & pkg app.js & rm app.js"
+    "test": "tsc src/index.ts --outDir app & node app/index.js & rm -r app",
+    "build": "tsc src/index.ts --outDir app & pkg app/index.js & rm -r app"
   }
 }
