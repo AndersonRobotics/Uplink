@@ -12,7 +12,7 @@
     "typescript": "^3.0.1"
   },
   "scripts": {
-    "test": "tsc src/index.ts --outDir app & node app/index.js & rm -r app",
-    "build": "tsc src/index.ts --outDir app & pkg app/index.js & rm -r app"
+    "test": "tsc src/index.ts --outDir app ; node app/index.js ; rm -r app",
+    "build": "tsc src/index.ts --outDir app ; pkg app/index.js ; rm -r app"
   }
 }
